@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISKES JKN Prototype</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <header>
+            <a href="#" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+            <h1>Ringkasan Kesehatan Peserta</h1>
+        </header>
+
+        <div class="content">
+            <p id="tanggal-update" style="text-align: right; color: #666; font-size: 11px; margin-bottom: 15px;"></p>
+
+            <div class="info-card">
+                <h2>INFORMASI PESERTA</h2>
+                <p><strong>Nama:</strong> <span id="nama-peserta">Memuat...</span></p>
+                <p><strong>NIK:</strong> <span id="nik-peserta">...</span></p>
+            </div>
+            
+            <h3>Riwayat Penyakit Kronis</h3>
+            <div id="diagnosa-list">
+                <p>Sedang menarik data riwayat...</p>
+            </div>
+
+            <h3 class="with-icon">Daftar Obat Rutin <i class="fas fa-pills icon green"></i></h3>
+            <div id="obat-list" class="obat-container">
+                </div>
+            
+            <h3 class="with-icon">Riwayat Rawat Inap <i class="fas fa-hospital icon"></i></h3>
+            <div id="inap-list">
+                </div>
+        </div>
+
+        <p class="disclaimer">
+            *Informasi ini hanyalah ringkasan klinis untuk tujuan konsultasi.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

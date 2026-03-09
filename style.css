@@ -1,0 +1,189 @@
+/* style.css */
+
+/* 1. Reset Dasar dan Font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Background abu-abu muda, lebih kalem */
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* 2. Container Mirip Layar Smartphone */
+.mobile-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    min-height: 100vh;
+    border-radius: 0; /* Tidak ada border-radius di Figma Anda */
+    overflow: hidden;
+}
+
+/* 3. Header (Top Bar) Aplikasi */
+header {
+    background-color: #3b82f6; /* Warna biru lebih gelap dari JKN */
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    flex-grow: 1; /* Agar judul berada di tengah atau mendorong ikon ke samping */
+    text-align: center;
+    position: relative; /* Untuk positioning ikon back */
+}
+header .back-arrow {
+    position: absolute;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* 4. Konten Utama */
+.content {
+    padding: 20px 15px; /* Sedikit lebih sempit padding samping */
+}
+.content h2 { /* Untuk judul besar seperti "INFORMASI PESERTA" */
+    color: #333;
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.content h3 { /* Untuk sub-judul seperti "Riwayat Penyakit Kronis" */
+    color: #333;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    padding-left: 8px; /* Jarak teks dari garis */
+}
+.content h3.with-icon { /* Untuk sub-judul dengan ikon, seperti Obat Rutin */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara teks dan ikon */
+}
+
+#tanggal-update {
+    color: #6c757d;
+    font-size: 11px;
+    margin-bottom: 15px;
+    text-align: right; /* Sesuai Figma */
+    display: block;
+}
+
+/* --- Transisi Wajib untuk Efek Halus --- */
+.info-card, .riwayat-entry, .obat-entry {
+    transition: all 0.3s ease-in-out; 
+}
+/* --- Transisi Wajib untuk Efek Halus --- */
+
+
+/* Card Informasi Peserta */
+.info-card {
+    background-color: #f7f7f7; /* Lebih terang */
+    padding: 15px;
+    border-radius: 8px; /* Sudut membulat */
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+/* Efek Hover untuk Info Card */
+.info-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Bayangan lebih jelas */
+    transform: translateY(-2px); /* Sedikit terangkat */
+    cursor: pointer;
+}
+.info-card p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+.info-card strong {
+    font-weight: 600;
+    color: #222;
+}
+
+/* Styling untuk setiap entri riwayat (Penyakit Kronis, Rawat Inap) */
+.riwayat-entry {
+    background-color: #f7f7f7; /* Background entri */
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    color: #333;
+    position: relative; /* Untuk garis biru di kiri */
+    border-left: 4px solid #3b82f6; /* Garis biru di kiri, seperti Figma */
+}
+/* Efek Hover untuk Riwayat Entry */
+.riwayat-entry:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Bayangan lebih jelas */
+    transform: translateY(-2px); /* Sedikit terangkat */
+    cursor: pointer;
+}
+.riwayat-entry p {
+    margin: 3px 0;
+    font-size: 13px;
+    color: #555;
+}
+.riwayat-entry strong {
+    font-weight: 600;
+}
+
+/* Styling Khusus untuk Daftar Obat Rutin */
+.obat-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Jarak antar pil obat */
+    margin-bottom: 20px;
+}
+.obat-entry {
+    background-color: #28a745; /* Hijau cerah untuk obat */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px; /* Bentuk pil obat */
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Agar teks obat tidak pecah baris */
+}
+/* Efek Hover untuk Obat Entry (Pil) */
+.obat-entry:hover {
+    transform: scale(1.05); /* Sedikit membesar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lebih menonjol */
+    cursor: pointer;
+}
+
+
+/* Disclaimer Footer */
+.disclaimer {
+    font-size: 11px;
+    color: #dc3545; /* Merah untuk peringatan */
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff; /* Pastikan disclaimer punya background putih */
+    border-top: 1px solid #eee;
+}
+
+/* Ikon Tambahan */
+.icon {
+    font-size: 18px; /* Ukuran ikon */
+    color: #3b82f6; /* Warna ikon sesuai biru aplikasi */
+}
+.icon.green { /* Untuk ikon obat */
+    color: #28a745;
+}

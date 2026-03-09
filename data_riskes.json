@@ -1,0 +1,21 @@
+
+    {
+    "nik": "3201011234567890",
+    "nama_peserta": "Nurul Hidayah",
+    "diagnosa_kronis": [
+        {"tanggal_awal": "2024-05-15", "diagnosa": "Hipertensi Esensial (I10)", "faskes": "RS Harapan"},
+        {"tanggal_awal": "2023-11-01", "diagnosa": "Diabetes Melitus Tipe 2 (E11)", "faskes": "Puskesmas Maju"},
+        {"tanggal_awal": "2023-08-20", "diagnosa": "Dislipidemia/Kolesterol Tinggi (E78)", "faskes": "Klinik Sehat Bugar"}
+    ],
+    "riwayat_obat_rutin": [
+        {"nama": "Metformin 500mg", "detail": "Sesudah makan 3 x 1"},
+        {"nama": "Amlodipin 5mg", "detail": "Sebelum makan 3 x 1"},
+        {"nama": "Simvastatin 10mg", "detail": "Sebelum makan 3 x 1"},
+        {"nama": "Parasetamol 500mg", "detail": "Sesudah makan 3 x 1"}
+    ],
+    "riwayat_rawat_inap": [
+        {"tanggal": "14-05-2024", "rumah_sakit": "RS Harapan", "diagnosa": "Sakit kepala berulang, pandangan kabur"},
+        {"tanggal": "30-10-2023", "rumah_sakit": "RS Eka Hospital", "diagnosa": "Rasa haus berlebihan, sering buang air kecil"}
+    ],
+    "status_update": "16-11-2025"
+    }
